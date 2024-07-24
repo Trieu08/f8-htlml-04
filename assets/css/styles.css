@@ -438,7 +438,8 @@ a {
 }
 
 .about__list {
-    display: flex;
+    position: relative;
+    display: inline-flex;
     column-gap: 56px;
     margin-top: 52px;
 }
@@ -448,6 +449,7 @@ a {
     display: flex;
     align-items: flex-end;
     column-gap: 10px;
+    cursor: pointer;
 }
 
 .about-item__sub-title {
@@ -457,17 +459,33 @@ a {
     white-space: nowrap;
 }
 
+.about__list::after,
 .about-item.access::after {
     position: absolute;
     bottom: -14px;
-    left: 0px;
+    left: 0;
     content: "";
-    width: 95px;
+    width: 100%;
     height: 2px;
+    opacity: 0.2;
     background: #ff5b2e;
 }
 
+.about-item.access::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.about__content-tab {
+    display: none;
+}
+
+.about__content-tab.active {
+    display: block;
+}
+
 .about__excerpt {
+    width: 391px;
     margin-top: 50px;
     font-size: 1.4rem;
     line-height: 1.71;
