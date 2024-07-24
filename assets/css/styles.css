@@ -447,7 +447,7 @@ a {
 .about-item {
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     column-gap: 10px;
     cursor: pointer;
 }
@@ -457,6 +457,10 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     white-space: nowrap;
+}
+
+.about-item__icon {
+    width: 20px;
 }
 
 .about__list::after,
