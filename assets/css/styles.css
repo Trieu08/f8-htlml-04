@@ -26,7 +26,8 @@ button {
 h1,
 h2,
 h3,
-h4 {
+h4,
+span {
     font-family: "Sora", sans-serif;
 }
 
@@ -516,7 +517,6 @@ a {
     display: block;
     color: #5e6085;
     text-align: center;
-    font-family: Sora, sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
 }
@@ -625,6 +625,119 @@ a {
     margin: -17px auto 0;
     outline: none;
     width: 214px;
+    height: 56px;
+    color: #ff5b2e;
+    border-radius: 31px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    cursor: pointer;
+}
+
+/* ====Staff==== */
+
+.staff {
+    margin-top: 130px;
+    background: #fffaf5;
+}
+
+.staff__label {
+    display: block;
+    color: #5e6085;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.staff__heading {
+    margin-top: 15px;
+    color: #000958;
+    text-align: center;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.staff__list {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.staff__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+}
+
+.staff__image {
+    position: relative;
+    width: 233px;
+}
+
+.staff__image::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 233px;
+    height: 266px;
+    border-radius: 129.5px;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__item:nth-child(2) .staff__image::after {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+.staff__item:nth-child(3) .staff__image::after {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+.staff__item:nth-child(4) .staff__image::after {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: 129.5px;
+}
+
+.staff__icon {
+    position: absolute;
+}
+
+.staff__item:nth-child(1) .staff__icon,
+.staff__item:nth-child(3) .staff__icon {
+    bottom: 89px;
+    left: 0;
+}
+.staff__item:nth-child(2) .staff__icon,
+.staff__item:nth-child(4) .staff__icon {
+    top: 19px;
+    left: 0;
+}
+
+.staff__desc {
+    margin: 39px 0 14px;
+    color: #656689;
+    font-size: 1.4rem;
+}
+
+.staff__title {
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.staff__btn {
+    display: block;
+    margin: 48px auto 0;
+    outline: none;
+    width: 193px;
     height: 56px;
     color: #ff5b2e;
     border-radius: 31px;
